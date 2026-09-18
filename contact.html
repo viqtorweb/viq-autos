@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+     <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">VIQ Auto's</h2>
+            </div>
+            <div class="hamburger" id="harmburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+                <ul class="menu" id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Our Products</a></li>
+                    <li><a href="testdrive.html">Book a Test Drive</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section id="contact-page" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Have questions or ready to take the next step? At VIQ Auto's, we are committed to providing you with the support and information you need. Reach out to us today and let us help you find the perfect car.</p>
+        <div class="form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Type your full name">
+        </div>
+        <div class="form">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="viqauto@gmail.com">
+        </div>
+        <div class="form">
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" id="subject" placeholder="Enter Subject">
+        </div>
+        <div class="form">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" placeholder="Type your message"></textarea>
+        </div>
+            <button>Submit</button>
+    </section>
+    <footer>
+    <div class="footer-content">
+        <div class="footer-brand">
+            <h3>VIQ Auto's</h3>
+            <p>Your trusted partner for quality pre-owned vehicles.</p>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Our Products</a></li>
+                <li><a href="testdrive.html">Book a Test Drive</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p><i class="fas fa-map-marker-alt"></i> 25 Olatunde Avenue, Hopeland Estate, Oko Afo, Badagry, Lagos, Nigeria.</p>
+            <p><i class="fas fa-phone"></i> Phone: +234 704 019 4687</p>
+            <p><i class="fas fa-envelope"></i></a> Email: <a href="mailto:etongvictor56@gmail.com">etongvictor56@gmail.com</a></p>
+            <p><i class="fab fa-facebook"></i> Facebook: <a href="https://www.facebook.com/victor.etong.56" target="_blank">Victor Etong</a></p>
+            <p><i class="fa-brands fa-whatsapp"></i> +234 813 036 9328</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 VIQ Auto's. All rights reserved.</p>
+    </div>
+</footer>
+<script>
+    const hamburger = document.getElementById('harmburger');
+    const menu = document.getElementById('menu');
+
+    hamburger.addEventListener('click', function() {
+        menu.classList.toggle('active');
+    });
+</script>
+</body>
+</html>

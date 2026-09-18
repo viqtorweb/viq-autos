@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Drive Your Preowned Cars</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="testdrive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">VIQ Auto's</h2>
+            </div>
+            <div class="hamburger" id="harmburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+                <ul class="menu" id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Our Products</a></li>
+                    <li><a href="testdrive.html">Book a Test Drive</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section id="testdrive page" class="testdrive section">
+        <h3>Book a Testdrive</h3>
+        <p>Experience the thrill of your dream car before you decide. At VIQ Auto's, we make it easy for you to take any of our vehicles for a spin. Simply fill in the form below, choose your preferred car, and we'll get in touch to schedule a convenient time for you. No pressure just pure driving pleasure.</p>
+        <div class="form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="type in your name">
+        </div>
+        <div class="form">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="viqauto@gmail.com">
+        </div>
+        <div class="form">
+            <label for="tel">Phone Number</label>
+            <input type="tel" id="tel" placeholder="08012345679">
+        </div>
+        <div class="form">
+            <label for="car">Select Your Car:</label>
+            <select name="car" id="car">
+                <option value="">Select a car...</option>
+                <optgroup label="Toyota">
+                 <option value="land-cruiser">Toyota Land Cruiser</option>
+                 <option value="highlander">Toyota Highlander</option>
+                 <option value="rav4">Toyota RAV4</option>
+                 <option value="sienna">Toyota Sienna Hybrid</option>
+                </optgroup>
+                <optgroup label="Lexus">
+                    <option value="nx-350">Lexus NX 350</option>
+                    <option value="rx-350">Lexus RX 350</option>
+                    <option value="es-350">Lexus ES 350</option>
+                    <option value="gx-460">Lexus GX 460</option>
+                    <option value="lx-570">Lexus RX 350 2008 model</option>
+                </optgroup>
+            </select>
+        </div>
+        <div class="form">
+            <label for="date">Date</label>
+            <input type="date" id="date" placeholder="Date">
+        </div>
+        <div class="form">
+            <label for="time">Time</label>
+            <input type="time" id="time" placeholder="preferred time">
+        </div>
+        <div class="form">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" placeholder="Write your Message here"></textarea>
+        </div>
+        <button>Submit</button>
+    </section>
+    <footer>
+    <div class="footer-content">
+        <div class="footer-brand">
+            <h3>VIQ Auto's</h3>
+            <p>Your trusted partner for quality pre-owned vehicles.</p>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Our Products</a></li>
+                <li><a href="testdrive.html">Book a Test Drive</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p><i class="fas fa-map-marker-alt"></i> 25 Olatunde Avenue, Hopeland Estate, Oko Afo, Badagry, Lagos, Nigeria.</p>
+            <p><i class="fas fa-phone"></i> Phone: +234 704 019 4687</p>
+            <p><i class="fas fa-envelope"></i></a> Email: <a href="mailto:etongvictor56@gmail.com">etongvictor56@gmail.com</a></p>
+            <p><i class="fab fa-facebook"></i> Facebook: <a href="https://www.facebook.com/victor.etong.56" target="_blank">Victor Etong</a></p>
+            <p><i class="fa-brands fa-whatsapp"></i> +234 813 036 9328</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 VIQ Auto's. All rights reserved.</p>
+    </div>
+</footer>
+<script>
+    const hamburger = document.getElementById('harmburger');
+    const menu = document.getElementById('menu');
+
+    hamburger.addEventListener('click', function() {
+        menu.classList.toggle('active');
+    });
+</script>
+</body>
+</html>
