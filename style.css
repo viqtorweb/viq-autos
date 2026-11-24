@@ -12,21 +12,36 @@ body {
 }
 
 /* ===== NAVBAR ===== */
+.main {
+    display: flex;
+    justify-content: center;
+}
+
 .navbar {
-    background-color: #000080;
-    padding: 15px 25px;
+    background: #030164;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 8px 20px;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 0;
 }
 
 .logo {
-    color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
+    height: 50px;
 }
 
 /* Desktop menu */
@@ -56,7 +71,6 @@ body {
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
-    margin-left: auto; /* Pushes hamburger to the right */
 }
 
 .hamburger span {
@@ -307,11 +321,14 @@ footer {
 }
 
 .footer-contact a {
-    color: #D4AF37; /* Gold */
-    text-decoration: solid;
-    transition: color 0.3s ease; /* Smooth hover transition */
+    color: #D4AF37;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
+.footer-contact a:hover {
+    color: #ffffff;
+}
 
 .footer-bottom {
     text-align: center;
@@ -320,7 +337,7 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* ===== RESPONSIVE ===== */
+
 @media (max-width: 768px) {
     .navbar {
         flex-direction: row;
@@ -329,13 +346,14 @@ footer {
         align-items: center;
     }
 
-    .hamburger {
-        display: flex;
-        order: 2; /* Pushes hamburger to the right */
+    .logo-container {
+        order: 1;
     }
 
-    .logo {
-        order: 1; /* Keeps logo on the left */
+    .hamburger {
+        display: flex;
+        order: 2;
+        margin-left: auto;
     }
 
     .menu {
@@ -347,18 +365,24 @@ footer {
         gap: 5px;
         border-radius: 0 0 10px 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        order: 3; /* Menu appears below logo and hamburger */
+        order: 3;
     }
 
     .menu.active {
         display: flex;
     }
 
-    .menu a {
+    .menu li {
+        list-style: none;
         text-align: center;
-        padding: 12px 0;
+        width: 100%;
+    }
+
+    .menu a {
         display: block;
         width: 100%;
+        padding: 12px 0;
+        text-align: center;
     }
 
     .search {

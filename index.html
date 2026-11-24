@@ -4,83 +4,198 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VIQ Automobiles</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="site.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="./assets/logo.png">
 </head>
 <body>
-                   <!-- Navbar Section -->
-   <div class="main">
-    <div class="navbar">
-        <div class="icon">
-           <h2 class="logo">VIQ Auto's</h2>
-        </div>
-        <div class="hamburger" id="harmburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+    <header class="site-header">
+        <div class="navbar container">
+            <a href="index.html" class="logo-container">
+                <img src="./assets/logo.png" alt="VIQ Auto's Logo" class="logo">
+                <span>VIQ Auto's</span>
+            </a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul class="menu" id="menu">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="products.html">Our Products</a></li>
-                <li><a href="testdrive.html">Book a Test Drive</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="testdrive.html" class="menu-cta">Book a Test Drive</a></li>
             </ul>
         </div>
-        <div class="search">
-            <input type="search" class="srch" placeholder="Search Our Cars">
-            <button class="btn">Search</button>
-        </div>
-    </div>
-   </div>
-                      <!-- Home Section -->
-   <div class="content" id="home">
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home" style="--hero-image: url('https://images.unsplash.com/photo-1650530579355-7ad9d4766043?w=1600&amp;auto=format&amp;fit=crop&amp;q=70');">
+        <div class="container hero-inner">
+            <span class="eyebrow">Quality Pre-Owned Vehicles</span>
             <h1>Excellence in Every Drive. Trust in Every Deal.</h1>
-            <p>Welcome to VIQ Auto's where finding your dream car is easy and exciting!
-               We offer a handpicked selection of quality vehicles from trusted brands
-               like Toyota, Honda, Ford, and Mercedes-Benz. Whether you are looking for reliability, luxury,
-               or performance, we have something for every driver. Drive home with confidence!
-            </p>
-    </div>
-                  <!-- About Section -->
-    <div class="info" id="about-us">
-          <h1>Your Trusted Partner for Quality Pre-Owned Vehicles</h1>
-          <p>At VIQ Auto's, we believe that buying a car should be an exciting and transparent journey, not a stressful one. We are committed to providing our customers with a handpicked selection of high-quality vehicles from trusted brands like Toyota, Honda, Ford, and Mercedes-Benz. Our mission is to make your dream car a reality with a focus on reliability, value, and exceptional service.</p>
-    </div>
-               <!-- Products Section -->
-    <section id="our-products" class="products-section">
-         <h2>Our Products</h2>
-          <div class="car-grid">
-            <div class="car-card">
-                <img src="https://images.unsplash.com/photo-1626072557464-90403d788e8d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODB8fFRveW90YSUyMGNhbXJ5fGVufDB8fDB8fHww" alt="Toyota-Corolla" height="550px">
-                <h3>Toyota-Corolla</h3>
-                <p class="price">&#8358;3,500,000</p>
+            <p>Handpicked cars from trusted brands. Reliable, luxurious and ready for the road.</p>
+            <div class="hero-actions">
+                <a href="products.html" class="btn btn-primary">Browse Our Cars</a>
+                <a href="testdrive.html" class="btn btn-outline">Book a Test Drive</a>
             </div>
-            <div class="car-card">
-                <img src="https://images.unsplash.com/photo-1628188859552-132bbeac6204?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGxleHVzJTIwY2Fyc3xlbnwwfHwwfHx8MA%3D%3D" alt="Lexus IS 350">
-                <h3>Lexus IS 350</h3>
-                <p class="price">&#8358;22,200,000</p>
-            </div>
-          </div>
-          <a href="products.html" class="cta-buttons">Browse Our Cars</a>
-    </section>
-                  <!-- Testdrive Section -->
-    <section id="testdrive" class="testdrive-section">
-        <h2>Schedule Your Test Drive</h2>
-        <p>At VIQ Auto's, we believe the best way to choose your next car is to get behind the wheel. Our test drive experience is designed to give you a real feel for the vehicle in a safe, comfortable environment. Fill in your details, choose your preferred car, and our team will arrange everything for you.</p>
-        <p class="trust-signal">No Pressure. No Commitment. Just a Test Drive</p>
-        <div class="button">
-        <a href="testdrive.html" class="cta-buttons-2">Give It a Try</a>
+            <ul class="hero-checks">
+                <li><i class="fas fa-circle-check"></i> Inspected cars</li>
+                <li><i class="fas fa-circle-check"></i> Transparent pricing</li>
+                <li><i class="fas fa-circle-check"></i> Easy test drives</li>
+            </ul>
+        </div>
+        <div class="container hero-cars">
+            <a href="products.html" class="hero-car">
+                <img src="https://images.unsplash.com/photo-1650530579355-7ad9d4766043?w=800&amp;auto=format&amp;fit=crop&amp;q=60" alt="Toyota Land Cruiser">
+                <div class="hero-car-info">
+                    <h3>Toyota Land Cruiser</h3>
+                    <span>&#8358;65,000,000</span>
+                </div>
+            </a>
+            <a href="products.html" class="hero-car">
+                <img src="https://images.unsplash.com/photo-1626072557464-90403d788e8d?w=800&amp;auto=format&amp;fit=crop&amp;q=60" alt="Toyota Corolla">
+                <div class="hero-car-info">
+                    <h3>Toyota Corolla</h3>
+                    <span>&#8358;3,500,000</span>
+                </div>
+            </a>
+            <a href="products.html" class="hero-car">
+                <img src="https://images.unsplash.com/photo-1628188859552-132bbeac6204?w=800&amp;auto=format&amp;fit=crop&amp;q=60" alt="Lexus IS 350">
+                <div class="hero-car-info">
+                    <h3>Lexus IS 350</h3>
+                    <span>&#8358;22,200,000</span>
+                </div>
+            </a>
         </div>
     </section>
-               <!-- Contact Session -->
-    <section id="contact-us" class="contact section">
-        <h2>Get In Touch</h2>
-        <p>Have questions or ready to take the next step? We would love to hear from you. Whether you need more information about a vehicle, want to schedule a test drive, or just want to chat with our friendly team, we are here to help. Reach out to us today and let us make your car-buying journey smooth and enjoyable.</p>
+
+    <!-- Shop by brand -->
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <span class="eyebrow">Shop By Brand</span>
+                <h2>Find Your Next Car</h2>
+            </div>
+            <div class="brand-tiles">
+                <a href="products.html#toyota" class="brand-tile">
+                    <div>
+                        <h3>Toyota</h3>
+                        <p>Land Cruiser, Highlander, RAV4 and more</p>
+                    </div>
+                    <span class="tile-link">View cars &rarr;</span>
+                </a>
+                <a href="products.html#lexus" class="brand-tile">
+                    <div>
+                        <h3>Lexus</h3>
+                        <p>GX, ES, RX, NX and more</p>
+                    </div>
+                    <span class="tile-link">View cars &rarr;</span>
+                </a>
+                <a href="products.html#mercedes-benz" class="brand-tile">
+                    <div>
+                        <h3>Mercedes-Benz</h3>
+                        <p>CLA, AMG G 63 and more</p>
+                    </div>
+                    <span class="tile-link">View cars &rarr;</span>
+                </a>
+                <a href="products.html#changan" class="brand-tile">
+                    <div>
+                        <h3>Changan</h3>
+                        <p>CS95, UNI-K, CS55 Plus and more</p>
+                    </div>
+                    <span class="tile-link">View cars &rarr;</span>
+                </a>
+                <a href="products.html#jetour" class="brand-tile">
+                    <div>
+                        <h3>Jetour</h3>
+                        <p>X50, X70 Plus, Dashing and T2</p>
+                    </div>
+                    <span class="tile-link">View cars &rarr;</span>
+                </a>
+            </div>
+        </div>
     </section>
+
+    <!-- Why choose us -->
+    <section class="section section-soft" id="about-us">
+        <div class="container">
+            <div class="section-head">
+                <span class="eyebrow">Why VIQ Auto's</span>
+                <h2>Buy With Confidence</h2>
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <div class="icon-circle"><i class="fas fa-shield-halved"></i></div>
+                    <h3>Quality Guaranteed</h3>
+                    <p>Every car is thoroughly inspected.</p>
+                </div>
+                <div class="feature">
+                    <div class="icon-circle"><i class="fas fa-tag"></i></div>
+                    <h3>Transparent Pricing</h3>
+                    <p>No hidden fees, no surprises.</p>
+                </div>
+                <div class="feature">
+                    <div class="icon-circle"><i class="fas fa-handshake"></i></div>
+                    <h3>Customer First</h3>
+                    <p>Your satisfaction is our priority.</p>
+                </div>
+                <div class="feature">
+                    <div class="icon-circle"><i class="fas fa-car-side"></i></div>
+                    <h3>Easy Test Drives</h3>
+                    <p>Drive it before you decide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <span class="eyebrow">How It Works</span>
+                <h2>Three Simple Steps</h2>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <h3>Pick Your Car</h3>
+                    <p>Browse our cars by brand and find the one you like.</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <h3>Enquire or Test Drive</h3>
+                    <p>Chat with us on WhatsApp or book a test drive.</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <h3>Drive Home Happy</h3>
+                    <p>Complete your purchase and enjoy your new car.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Test drive -->
+    <section class="section section-soft" id="testdrive">
+        <div class="container">
+            <div class="cta-band">
+                <div>
+                    <h2>Schedule Your Test Drive</h2>
+                    <p>No pressure. No commitment. Just a test drive.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="testdrive.html" class="btn btn-primary">Book a Test Drive</a>
+                    <a href="https://wa.me/2348130369328" target="_blank" rel="noopener" class="btn btn-outline"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
     <div class="footer-content">
         <div class="footer-brand">
@@ -101,7 +216,7 @@
             <h4>Contact Us</h4>
             <p><i class="fas fa-map-marker-alt"></i> 25 Olatunde Avenue, Hopeland Estate, Oko Afo, Badagry, Lagos, Nigeria.</p>
             <p><i class="fas fa-phone"></i> Phone: +234 704 019 4687</p>
-            <p><i class="fas fa-envelope"></i></a> Email: <a href="mailto:etongvictor56@gmail.com">etongvictor56@gmail.com</a></p>
+            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:etongvictor56@gmail.com">etongvictor56@gmail.com</a></p>
             <p><i class="fab fa-facebook"></i> Facebook: <a href="https://www.facebook.com/victor.etong.56" target="_blank">Victor Etong</a></p>
             <p><i class="fa-brands fa-whatsapp"></i> +234 813 036 9328</p>
         </div>
@@ -110,8 +225,9 @@
         <p>&copy; 2026 VIQ Auto's. All rights reserved.</p>
     </div>
 </footer>
+<a href="https://wa.me/2348130369328" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat with us on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
 <script>
-    const hamburger = document.getElementById('harmburger');
+    const hamburger = document.getElementById('hamburger');
     const menu = document.getElementById('menu');
 
     hamburger.addEventListener('click', function() {

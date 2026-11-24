@@ -22,12 +22,23 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-.icon .logo {
-    color: #ffffff;
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.logo-container span {
+    font-size: 20px;
     font-family: 'Inter', sans-serif;
-    font-size: 1.5rem;
     font-weight: bold;
-    margin: 0;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.logo {
+    height: 50px;
 }
 
 /* Desktop menu */
@@ -57,7 +68,7 @@ body {
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
-    margin-left: auto; /* Pushes hamburger to the right */
+    margin-left: auto;
 }
 
 .hamburger span {
@@ -88,15 +99,6 @@ body {
     color: #555;
     margin-bottom: 30px;
     font-size: 1.1rem;
-}
-
-/* Navbar logo — stays white */
-.navbar .logo {
-    color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 0;
 }
 
 /* Brand series headers — styled separately */
@@ -140,8 +142,9 @@ body {
 
 .car-card img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: contain;
     border-radius: 10px;
     background-color: #f5f5f5;
 }
@@ -180,6 +183,107 @@ body {
 
 .car-card ul li b {
     color: #000080;
+}
+
+/* ===== BRAND FILTER ===== */
+.filter-bar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.filter-btn {
+    background-color: #ffffff;
+    color: #000080;
+    border: 2px solid #000080;
+    border-radius: 30px;
+    padding: 8px 22px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: #000080;
+    color: #ffffff;
+}
+
+/* ===== ENQUIRE BUTTON ===== */
+.enquire-btn {
+    display: inline-block;
+    background-color: #000080;
+    color: #ffffff;
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 0.95rem;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.enquire-btn:hover {
+    background-color: #D4AF37;
+    color: #000080;
+}
+
+/* ===== SPEC CHIPS ===== */
+.car-card ul.specs {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    margin: 0 0 14px;
+    padding: 0;
+}
+
+.car-card ul.specs li {
+    background-color: #f0f2f8;
+    border: 1px solid #d9deef;
+    border-radius: 20px;
+    padding: 4px 12px;
+    margin: 0;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #000080;
+}
+
+/* ===== FULL DETAILS TOGGLE ===== */
+.more-info {
+    margin-top: 6px;
+    text-align: left;
+}
+
+.more-info summary {
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #000080;
+}
+
+.more-info summary:hover {
+    text-decoration: underline;
+}
+
+.more-info h4 {
+    font-family: 'Inter', sans-serif;
+    color: #000080;
+    font-size: 1rem;
+    margin: 12px 0 8px;
+}
+
+.more-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* ===== FOOTER ===== */
@@ -226,9 +330,13 @@ footer {
 }
 
 .footer-contact a {
-    color: #D4AF37; /* Gold */
-    text-decoration: solid;
-    transition: color 0.3s ease; /* Smooth hover transition */
+    color: #D4AF37;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+    color: #ffffff;
 }
 
 .footer-bottom {
@@ -253,7 +361,7 @@ footer {
         margin-left: auto;
     }
 
-    .icon {
+    .logo-container {
         order: 1;
     }
 
@@ -301,7 +409,7 @@ footer {
     }
 
     .car-card img {
-        height: 180px;
+        height: auto;
     }
 
     .footer-content {

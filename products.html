@@ -6,168 +6,310 @@
     <title>Our products - VIQ Auto's</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="products.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon"  href="./assets/logo.png">
 </head>
 <body>
-    <div class="main">
-        <div class="navbar">
+    <header class="site-header">
+        <div class="navbar container">
+            <a href="index.html" class="logo-container">
+                <img src="./assets/logo.png" alt="VIQ Auto's Logo" class="logo">
+                <span>VIQ Auto's</span>
+            </a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html" class="active">Our Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="testdrive.html" class="menu-cta">Book a Test Drive</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>Quality vehicles from trusted brands. Find the one that fits your style and budget.</p>
+        </div>
+    </section>
+
+    <section class="section" id="products-page">
+        <div class="container">
+
+        <div class="filter-bar" role="group" aria-label="Filter cars by brand">
+            <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All Cars</button>
+            <button type="button" class="filter-btn" data-filter="toyota" aria-pressed="false">Toyota</button>
+            <button type="button" class="filter-btn" data-filter="lexus" aria-pressed="false">Lexus</button>
+            <button type="button" class="filter-btn" data-filter="mercedes-benz" aria-pressed="false">Mercedes-Benz</button>
+            <button type="button" class="filter-btn" data-filter="changan" aria-pressed="false">Changan</button>
+            <button type="button" class="filter-btn" data-filter="jetour" aria-pressed="false">Jetour</button>
+        </div>
+
+        <div class="brand-section" id="toyota" data-brand="toyota">
             <div class="icon">
-                <h2 class="logo">VIQ Auto's</h2>
+                <div class="brand-header">
+                    <img src="https://global.toyota/pages/global_toyota/mobility/toyota-brand/emblem_001.jpg" alt="Toyota Logo" width="26" style="vertical-align: middle; margin-right: 10px;">
+                    Toyota Series
+                </div>
             </div>
-            <div class="hamburger" id="harmburger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-                <ul class="menu" id="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="products.html">Our Products</a></li>
-                    <li><a href="testdrive.html">Book a Testdrive</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <section id="products-page" class="products-section">
-        <h2>Our Products</h2>
-        <p>Explore our curated selection of quality vehicles from trusted brands. Find the perfect car that fits your style and budget.</p>
-        <div class="icon">
-            <div class="brand-header">
-                <img src="https://global.toyota/pages/global_toyota/mobility/toyota-brand/emblem_001.jpg" alt="Toyota Logo" width="26" style="vertical-align: middle; margin-right: 10px;">
-                Toyota Series
-            </div>
-        </div>
-        <div class="car-grid">
-            <div class="car-card">
-                <img src="https://images.unsplash.com/photo-1650530579355-7ad9d4766043?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dG95b3RhJTIwbGFuZCUyMGNydWlzZXJ8ZW58MHx8MHx8fDA%3D" alt="Toyota Land Cruiser">
-                <h3>Toyota Land Cruiser</h3>
-                <p class="price">&#8358;65,000,000</p>
-                <h3>VIQ Auto's Take On This Ride</h3>
-                <ul>
-                    <li><b>Hybrid Performance</b> - Turbocharged 2.4L i-FORCE MAX hybrid engine (up to 326 hp) paired with a smooth 8-speed or 10-speed automatic transmission and full-time 4WD for confident handling.</li>
-                    <li><b>Off-Road Ready</b> - Features like stabilizer disconnect, electronic locking rear differential, and Crawl Control with Multi-Terrain Select help you tackle rough terrain with ease.</li>
-                    <li><b>Premium Interior</b> - Heated/ventilated power seats, a large 12.3-inch touchscreen with JBL audio, and a heated leather-wrapped steering wheel for comfort and style.</li>
-                    <li><b>Advanced Safety</b> - Toyota Safety Sense suite (pre-collision assist, lane tracing, adaptive cruise control) plus automatic high beams and LED projector headlights.</li>
-                </ul>
-            </div>
-            <div class="car-card">
-                <img src="https://www.edmunds.com/assets/m2/for-sale/60-5TDZA3EH0BS012783/img-1-600x400.jpg" alt="Toyota Highlander">
-                <h3>Toyota Highlander</h3>
-                <p class="price">&#8358;12,000,000</p>
-                <h3>VIQ Auto's Take On This Ride</h3>
-                <ul>
-                    <li><b>Engine Options</b> - Choose between a 2.7L 4-cylinder (187 hp) or a 3.5L V6 (270 hp), paired with a 6-speed or 5-speed automatic transmission. Available in front-wheel drive (FWD) or all-wheel drive (AWD).</li>
-                    <li><b>Fuel Economy</b> - Delivers an estimated 19-20 mpg combined, with highway ratings up to 27 mpg depending on the engine and drivetrain.</li>
-                    <li><b>Spacious Interior</b> - Seats up to 7 passengers with fold-flat third-row seating and offers up to 95.4 cubic feet of cargo space. Trim levels include Base, Sport, SE, and Limited with options like leather seating and heated front seats.</li>
-                    <li><b>Safety & Confidence</b> - Equipped with seven airbags, Vehicle Stability Control (VSC), Traction Control (TRAC), ABS, Brake Assist, and Hill-start Assist, with Downhill Assist Control on select models.</li>
-                </ul>
-            </div>
-            <div class="car-card">
-                <img src="https://www.iihs.org/cdn-cgi/image/width=636/api/ratings/model-year-images/1863/" alt="Toyota RAV4">
-                <h3>Toyota RAV4 Crossover SUV</h3>
-                <p class="price">&#8358;18,000,000</p>
-                <h3>VIQ Auto's Take On This Ride</h3>
-                <ul>
-                    <li><b>Performance & Efficiency</b> - Powered by a 2.5L 4-cylinder engine with 172 lb-ft of torque, paired with Sport and Eco drive modes. Delivers an EPA-estimated 25 mpg combined (22 city / 29 highway) on AWD models.</li>
-                    <li><b>Flexible Interior Space</b> - Offers 38.4 cubic feet of cargo space behind the rear seats, expanding to 73.4 cubic feet with the seats folded. Rear seats feature a 60/40 split, recline, and fold-flat functionality.</li>
-                    <li><b>Technology & Connectivity</b> - Comes with a 6.1-inch touchscreen, Bluetooth, USB port, and auxiliary audio jack. Higher trims add dual-zone climate control, power moonroof, and a power liftgate.</li>
-                    <li><b>Safety & Peace of Mind</b> - Equipped with eight standard airbags, including a driver's knee airbag. Earned a "Good" rating in the IIHS small-overlap frontal crash test, with available blind-spot monitoring and rear cross-traffic alert on the Limited trim.</li>
-                </ul>
-            </div>
-            <div class="car-card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4oJTCt4alUKUKIM6Cy0OXNwjzMxHKJOEglWennZOINPs7MYK-QOng6q0&s=10" alt="Toyota Sienna">
-                <h3>Toyota Sienna Hybrid</h3>
-                <p class="price">&#8358;55,000,000</p>
-                <h3>VIQ Auto's Take On This Ride</h3>
-                <ul>
-                    <li><b>Hybrid Power That Saves</b> - Powered by a 2.5-liter 4-cylinder hybrid engine with 245 net combined horsepower and an eCVT transmission. Delivers an EPA-estimated 36 mpg combined on front-wheel drive models, with available Electronic On-Demand All-Wheel Drive.</li>
-                    <li><b>Spacious Family And Friendly Interior</b> - Accommodates up to 7 or 8 passengers. Features hands-free dual power sliding doors, a hands-free power liftgate, rear window sunshades, and multiple USB ports throughout the cabin.</li>
-                    <li><b>Modern Technology</b> - Upgraded touchscreen with wireless Apple CarPlay and Android Auto, plus generous small-item storage cubbies for added convenience.</li>
-                    <li><b>Comprehensive Safety Suite</b> - Comes standard with Toyota Safety Sense (pre-collision system, pedestrian detection, lane departure alert with steering assist, full-speed radar cruise control, and road sign assist). Also includes blind-spot monitoring and rear cross-traffic alert.</li>
-                </ul>
-            </div>
-            <div class="car-card">
-                <img src="https://media.ed.edmunds-media.com/toyota/avalon/2017/oem/2017_toyota_avalon_sedan_touring_fq_oem_1_1600.jpg" alt="Toyota Avalon" width="700px">
-                <h3>Toyota Avalon - 2017 model</h3>
-                <p class="price">&#8358;24,500,000</p>
-                <h3>VIQ Auto's Take On This Ride</h3>
-                <ul>
-                    <li><b>Performance & Efficiency</b> - Powered by a 3.5L V6 engine producing 268 hp and 248 lb-ft of torque, paired with a 6-speed automatic transmission. Delivers an EPA-estimated 21 mpg city / 30 mpg highway on front-wheel drive models. Hybrid options may also be available.</li>
-                    <li><b>Comfort & Interior</b> - Features leather upholstery with heated, power-adjustable front seats (up to 10-way), dual-zone or three-zone automatic climate control, and 16.0 cubic feet of trunk space. Technology includes an Entune audio system, Bluetooth, and available wireless charging.</li>
-                    <li><b>Safety & Driver Assistance</b> - Comes standard with Toyota Safety Sense (pre-collision system with pedestrian detection, lane departure alert, automatic high beams, and adaptive cruise control). Higher trims add blind-spot monitoring and rear cross-traffic alert.</li>
-                    <li><b>Trim Level Options</b> - Available in XLE, XLE Plus, XLE Premium, Touring, and Limited trims — with upgrades like navigation, ventilated seats, sport-tuned suspension, 18-inch wheels, and a premium JBL audio system on top-tier models.</li>
-                </ul>
+            <div class="car-grid">
+                <div class="car-card">
+                    <img src="https://images.unsplash.com/photo-1650530579355-7ad9d4766043?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dG95b3RhJTIwbGFuZCUyMGNydWlzZXJ8ZW58MHx8MHx8fDA%3D" alt="Toyota Land Cruiser">
+                    <h3>Toyota Land Cruiser</h3>
+                    <p class="price">&#8358;65,000,000</p>
+                    <ul class="specs"><li>2.4L Hybrid</li><li>326 hp</li><li>Full-time 4WD</li><li>Automatic</li></ul>
+                    <a class="enquire-btn" href="https://wa.me/2348130369328" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Enquire on WhatsApp</a>
+                    <details class="more-info"><summary>View full details</summary><h4>VIQ Auto's Take On This Ride</h4><ul>
+                        <li><b>Hybrid Performance</b> - Turbocharged 2.4L i-FORCE MAX hybrid engine (up to 326 hp) paired with a smooth 8-speed or 10-speed automatic transmission and full-time 4WD for confident handling.</li>
+                        <li><b>Off-Road Ready</b> - Features like stabilizer disconnect, electronic locking rear differential, and Crawl Control with Multi-Terrain Select help you tackle rough terrain with ease.</li>
+                        <li><b>Premium Interior</b> - Heated/ventilated power seats, a large 12.3-inch touchscreen with JBL audio, and a heated leather-wrapped steering wheel for comfort and style.</li>
+                        <li><b>Advanced Safety</b> - Toyota Safety Sense suite (pre-collision assist, lane tracing, adaptive cruise control) plus automatic high beams and LED projector headlights.</li>
+                    </ul></details>
+                </div>
+                <div class="car-card">
+                    <img src="https://www.edmunds.com/assets/m2/for-sale/60-5TDZA3EH0BS012783/img-1-600x400.jpg" alt="Toyota Highlander">
+                    <h3>Toyota Highlander</h3>
+                    <p class="price">&#8358;12,000,000</p>
+                    <ul class="specs"><li>2.7L or 3.5L V6</li><li>7 seats</li><li>FWD / AWD</li><li>Automatic</li></ul>
+                    <a class="enquire-btn" href="https://wa.me/2348130369328" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Enquire on WhatsApp</a>
+                    <details class="more-info"><summary>View full details</summary><h4>VIQ Auto's Take On This Ride</h4><ul>
+                        <li><b>Engine Options</b> - Choose between a 2.7L 4-cylinder (187 hp) or a 3.5L V6 (270 hp), paired with a 6-speed or 5-speed automatic transmission. Available in front-wheel drive (FWD) or all-wheel drive (AWD).</li>
+                        <li><b>Fuel Economy</b> - Delivers an estimated 19-20 mpg combined, with highway ratings up to 27 mpg depending on the engine and drivetrain.</li>
+                        <li><b>Spacious Interior</b> - Seats up to 7 passengers with fold-flat third-row seating and offers up to 95.4 cubic feet of cargo space. Trim levels include Base, Sport, SE, and Limited with options like leather seating and heated front seats.</li>
+                        <li><b>Safety & Confidence</b> - Equipped with seven airbags, Vehicle Stability Control (VSC), Traction Control (TRAC), ABS, Brake Assist, and Hill-start Assist, with Downhill Assist Control on select models.</li>
+                    </ul></details>
+                </div>
+                <div class="car-card">
+                    <img src="https://www.iihs.org/cdn-cgi/image/width=636/api/ratings/model-year-images/1863/" alt="Toyota RAV4">
+                    <h3>Toyota RAV4 Crossover SUV</h3>
+                    <p class="price">&#8358;18,000,000</p>
+                    <ul class="specs"><li>2.5L 4-cylinder</li><li>Sport and Eco modes</li><li>8 airbags</li><li>Bluetooth</li></ul>
+                    <a class="enquire-btn" href="https://wa.me/2348130369328" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Enquire on WhatsApp</a>
+                    <details class="more-info"><summary>View full details</summary><h4>VIQ Auto's Take On This Ride</h4><ul>
+                        <li><b>Performance & Efficiency</b> - Powered by a 2.5L 4-cylinder engine with 172 lb-ft of torque, paired with Sport and Eco drive modes. Delivers an EPA-estimated 25 mpg combined (22 city / 29 highway) on AWD models.</li>
+                        <li><b>Flexible Interior Space</b> - Offers 38.4 cubic feet of cargo space behind the rear seats, expanding to 73.4 cubic feet with the seats folded. Rear seats feature a 60/40 split, recline, and fold-flat functionality.</li>
+                        <li><b>Technology & Connectivity</b> - Comes with a 6.1-inch touchscreen, Bluetooth, USB port, and auxiliary audio jack. Higher trims add dual-zone climate control, power moonroof, and a power liftgate.</li>
+                        <li><b>Safety & Peace of Mind</b> - Equipped with eight standard airbags, including a driver's knee airbag. Earned a "Good" rating in the IIHS small-overlap frontal crash test, with available blind-spot monitoring and rear cross-traffic alert on the Limited trim.</li>
+                    </ul></details>
+                </div>
+                <div class="car-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4oJTCt4alUKUKIM6Cy0OXNwjzMxHKJOEglWennZOINPs7MYK-QOng6q0&s=10" alt="Toyota Sienna">
+                    <h3>Toyota Sienna Hybrid</h3>
+                    <p class="price">&#8358;55,000,000</p>
+                    <ul class="specs"><li>2.5L Hybrid</li><li>245 hp</li><li>7-8 seats</li><li>Apple CarPlay</li></ul>
+                    <a class="enquire-btn" href="https://wa.me/2348130369328" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Enquire on WhatsApp</a>
+                    <details class="more-info"><summary>View full details</summary><h4>VIQ Auto's Take On This Ride</h4><ul>
+                        <li><b>Hybrid Power That Saves</b> - Powered by a 2.5-liter 4-cylinder hybrid engine with 245 net combined horsepower and an eCVT transmission. Delivers an EPA-estimated 36 mpg combined on front-wheel drive models, with available Electronic On-Demand All-Wheel Drive.</li>
+                        <li><b>Spacious Family And Friendly Interior</b> - Accommodates up to 7 or 8 passengers. Features hands-free dual power sliding doors, a hands-free power liftgate, rear window sunshades, and multiple USB ports throughout the cabin.</li>
+                        <li><b>Modern Technology</b> - Upgraded touchscreen with wireless Apple CarPlay and Android Auto, plus generous small-item storage cubbies for added convenience.</li>
+                        <li><b>Comprehensive Safety Suite</b> - Comes standard with Toyota Safety Sense (pre-collision system, pedestrian detection, lane departure alert with steering assist, full-speed radar cruise control, and road sign assist). Also includes blind-spot monitoring and rear cross-traffic alert.</li>
+                    </ul></details>
+                </div>
+                <div class="car-card">
+                    <img src="https://media.ed.edmunds-media.com/toyota/avalon/2017/oem/2017_toyota_avalon_sedan_touring_fq_oem_1_1600.jpg" alt="Toyota Avalon" width="700px">
+                    <h3>Toyota Avalon - 2017 model</h3>
+                    <p class="price">&#8358;24,500,000</p>
+                    <ul class="specs"><li>3.5L V6</li><li>268 hp</li><li>6-speed automatic</li><li>Leather seats</li></ul>
+                    <a class="enquire-btn" href="https://wa.me/2348130369328" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Enquire on WhatsApp</a>
+                    <details class="more-info"><summary>View full details</summary><h4>VIQ Auto's Take On This Ride</h4><ul>
+                        <li><b>Performance & Efficiency</b> - Powered by a 3.5L V6 engine producing 268 hp and 248 lb-ft of torque, paired with a 6-speed automatic transmission. Delivers an EPA-estimated 21 mpg city / 30 mpg highway on front-wheel drive models. Hybrid options may also be available.</li>
+                        <li><b>Comfort & Interior</b> - Features leather upholstery with heated, power-adjustable front seats (up to 10-way), dual-zone or three-zone automatic climate control, and 16.0 cubic feet of trunk space. Technology includes an Entune audio system, Bluetooth, and available wireless charging.</li>
+                        <li><b>Safety & Driver Assistance</b> - Comes standard with Toyota Safety Sense (pre-collision system with pedestrian detection, lane departure alert, automatic high beams, and adaptive cruise control). Higher trims add blind-spot monitoring and rear cross-traffic alert.</li>
+                        <li><b>Trim Level Options</b> - Available in XLE, XLE Plus, XLE Premium, Touring, and Limited trims — with upgrades like navigation, ventilated seats, sport-tuned suspension, 18-inch wheels, and a premium JBL audio system on top-tier models.</li>
+                    </ul></details>
+                </div>
             </div>
         </div>
-        <div class="icon">
-            <div class="brand-header">
-                <img src="https://www.lexus.com/content/dam/lexus/content-fragments/navigation/global-nav-v2/assets/lexus-logo.svg" alt="Lexus Logo" width="26" style="vertical-align: middle; margin-right: 10px;">
-                Lexus Series
+
+        <div class="brand-section" id="lexus" data-brand="lexus">
+            <div class="icon">
+                <div class="brand-header">
+                    <img src="https://www.lexus.com/content/dam/lexus/content-fragments/navigation/global-nav-v2/assets/lexus-logo.svg" alt="Lexus Logo" width="26" style="vertical-align: middle; margin-right: 10px;">
+                    Lexus Series
+                </div>
             </div>
             <div class="car-grid">
                 <div class="car-card">
                     <img src="https://di-uploads-pod23.dealerinspire.com/shottenkirkdesertlexus/uploads/2023/03/Screenshot-2023-03-15-at-8.34.46-PM-1024x596.png" alt="Lexus GX 450">
                     <h3>Lexus GX 450</h3>
                     <p class="price">&#8358;55,000,000</p>
-                    <h3>VIQ Auto's Take On This Ride</h3>
-                    <ul>
+                    <ul class="specs"><li>Full-time 4WD</li><li>Leather interior</li><li>Surround camera</li><li>Adaptive cruise</li></ul>
+                    <a class="enquire-btn" href="https://wa.me/2348130369328" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Enquire on WhatsApp</a>
+                    <details class="more-info"><summary>View full details</summary><h4>VIQ Auto's Take On This Ride</h4><ul>
                         <li><b>Rugged & Capable</b> - Body-on-frame construction delivers exceptional strength, durability, and towing capability. Full-time 4WD with Multi-Terrain Select and Crawl Control ensures confident handling on mud, sand, snow, dirt, and rocks.</li>
                         <li><b>Luxurious Comfort</b> - Premium leather upholstery, genuine timber accents, and metallic trim create a refined cabin. Heated, ventilated, and available massaging front seats, plus superior noise insulation, make every journey relaxing.</li>
                         <li><b>Advanced Technology</b> - Large multimedia touchscreen with crisp graphics, voice activation, and smartphone integration. Surround camera system with multi-angle and panoramic views eases parking and trail navigation.</li>
                         <li><b>Comprehensive Safety</b> - Equipped with adaptive cruise control, lane-keeping assist, pre-collision systems, and other advanced driver assistance features for peace of mind on and off the road.</li>
-                    </ul>
+                    </ul></details>
                 </div>
                 <div class="car-card">
-                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCb03mDmkOzlYHWVfSejgSUuHUsykuLLGNKVPr6ikONWIZoB4H2LK7-ejB&s=10" alt="Lexus ES">
-                   <h3>Lexus ES 350</h3>
-                   <p class="price">&#8358;16,500,000</p>
-                   <h3>At a Glance</h3>
-                   <ul>
-                    <li><b>Smooth V6 Performance</b> - Powered by a 3.5-liter V6 engine producing 268 hp and 248 lb-ft of torque, paired with a 6-speed automatic transmission. Delivers an EPA-estimated 21 mpg city / 31 mpg highway (24 mpg combined) for a balanced blend of power and efficiency.</li>
-                    <li><b>Refined Interior Comfort</b> - Seats 5 passengers with standard perforated NuLuxe leatherette, 10-way power-adjustable front seats, and generous legroom (41.9 inches front / 40.0 inches rear). Cabin features piano-black trim with available bamboo or maple wood accents.</li>
-                    <li><b>Modern Technology</b> - Equipped with a standard display audio system, backup camera, and upgraded Bluetooth connectivity for seamless smartphone integration.</li>
-                    <li><b>Comprehensive Safety</b> - Comes with 10 standard airbags including knee airbags, anti-lock brakes (ABS), stability and traction control. Optional upgrades include pre-collision system, blind-spot monitoring, and lane departure alert.</li>
-                   </ul>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCb03mDmkOzlYHWVfSejgSUuHUsykuLLGNKVPr6ikONWIZoB4H2LK7-ejB&s=10" alt="Lexus ES">
+                    <h3>Lexus ES 350</h3>
+                    <p class="price">&#8358;16,500,000</p>
+                    <ul class="specs"><li>3.5L V6</li><li>268 hp</li><li>5 seats</li><li>10 airbags</li></ul>
+                    <a class="enquire-btn" href="https://wa.me/2348130369328" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Enquire on WhatsApp</a>
+                    <details class="more-info"><summary>View full details</summary><h4>At a Glance</h4><ul>
+                        <li><b>Smooth V6 Performance</b> - Powered by a 3.5-liter V6 engine producing 268 hp and 248 lb-ft of torque, paired with a 6-speed automatic transmission. Delivers an EPA-estimated 21 mpg city / 31 mpg highway (24 mpg combined) for a balanced blend of power and efficiency.</li>
+                        <li><b>Refined Interior Comfort</b> - Seats 5 passengers with standard perforated NuLuxe leatherette, 10-way power-adjustable front seats, and generous legroom (41.9 inches front / 40.0 inches rear). Cabin features piano-black trim with available bamboo or maple wood accents.</li>
+                        <li><b>Modern Technology</b> - Equipped with a standard display audio system, backup camera, and upgraded Bluetooth connectivity for seamless smartphone integration.</li>
+                        <li><b>Comprehensive Safety</b> - Comes with 10 standard airbags including knee airbags, anti-lock brakes (ABS), stability and traction control. Optional upgrades include pre-collision system, blind-spot monitoring, and lane departure alert.</li>
+                    </ul></details>
                 </div>
                 <div class="car-card">
-                   <img src="https://lexusenthusiast.com/images/weblog/14-02-27-lexus-rx-350-2015.jpg" alt="Lexus RX 350">
-                   <h3>Lexus RX 350 - 2015 model</h3>
-                   <p class="price">&#8358;31,000,000</p>
-                   <h3>VIQ Auto's Signature Review</h3>
-                   <ul>
-                    <li><b>Refined V6 Performance</b> - Powered by a 3.5-liter V6 engine producing 270 hp and 248 lb-ft of torque, paired with a 6-speed (base/Touring) or 8-speed (F Sport) automatic transmission. Available in Front-Wheel Drive or All-Wheel Drive, with an EPA-estimated 18 mpg city / 25 mpg highway / 21 mpg combined.</li>
-                    <li><b>Sleek & Functional Exterior</b> - Features standard 18-inch alloy wheels (19-inch on F Sport), automatic headlamps, foglamps, LED running lamps, a power liftgate, and heated power-adjustable side mirrors for added convenience and style.</li>
-                    <li><b>Premium Interior Comfort</b> - Accommodates 5 passengers with 8-way power front seats, sliding/reclining rear seats, and dual-zone automatic climate control. Cabin includes cloth upholstery (often upgraded to leather) and a leather-wrapped tilt-and-telescoping steering wheel.</li>
-                    <li><b>Smart Technology & Safety</b> - Equipped with a 7-inch display screen, rearview camera, 12-speaker audio system with 6-CD changer, satellite radio, and USB/iPod/Bluetooth with Siri Eyes Free. Also includes the Safety Connect emergency communications system for added peace of mind.</li>
-                   </ul>
+                    <img src="https://lexusenthusiast.com/images/weblog/14-02-27-lexus-rx-350-2015.jpg" alt="Lexus RX 350">
+                    <h3>Lexus RX 350 - 2015 model</h3>
+                    <p class="price">&#8358;31,000,000</p>
+                    <ul class="specs"><li>3.5L V6</li><li>270 hp</li><li>FWD / AWD</li><li>5 seats</li></ul>
+                    <a class="enquire-btn" href="https://wa.me/2348130369328" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Enquire on WhatsApp</a>
+                    <details class="more-info"><summary>View full details</summary><h4>VIQ Auto's Signature Review</h4><ul>
+                        <li><b>Refined V6 Performance</b> - Powered by a 3.5-liter V6 engine producing 270 hp and 248 lb-ft of torque, paired with a 6-speed (base/Touring) or 8-speed (F Sport) automatic transmission. Available in Front-Wheel Drive or All-Wheel Drive, with an EPA-estimated 18 mpg city / 25 mpg highway / 21 mpg combined.</li>
+                        <li><b>Sleek & Functional Exterior</b> - Features standard 18-inch alloy wheels (19-inch on F Sport), automatic headlamps, foglamps, LED running lamps, a power liftgate, and heated power-adjustable side mirrors for added convenience and style.</li>
+                        <li><b>Premium Interior Comfort</b> - Accommodates 5 passengers with 8-way power front seats, sliding/reclining rear seats, and dual-zone automatic climate control. Cabin includes cloth upholstery (often upgraded to leather) and a leather-wrapped tilt-and-telescoping steering wheel.</li>
+                        <li><b>Smart Technology & Safety</b> - Equipped with a 7-inch display screen, rearview camera, 12-speaker audio system with 6-CD changer, satellite radio, and USB/iPod/Bluetooth with Siri Eyes Free. Also includes the Safety Connect emergency communications system for added peace of mind.</li>
+                    </ul></details>
                 </div>
                 <div class="car-card">
-                  <img src="https://cdn.autohaus.de/thumb_750x422/media/5172/lexus-nx-2022-2.jpg" alt="Lexus NX">
-                  <h3>Lexus NX 350h</h3>
-                  <p class="price">&#8358;60,000,000</p>
-                  <h3>Key Highlights</h3>
-                  <ul>
-                    <li><b>Turbocharged Performance</b> - Powered by a 2.4-liter turbocharged 4-cylinder engine delivering 275 horsepower, paired with an 8-speed automatic transmission and standard All-Wheel Drive. Achieves 0-60 mph in 6.6 seconds with a high-rigidity body frame for reduced noise and improved ride comfort.</li>
-                    <li><b>Modern & Tech-Forward Interior</b> - Features a standard 9.8-inch HD touchscreen (upgradable to 14 inches) with wireless Apple CarPlay and Android Auto. Premium NuLuxe or leather-trimmed seating with power adjustments, digital latch door handles, keyless ignition, and an available head-up display.</li>
-                    <li><b>Advanced Safety Suite</b> - Comes standard with Lexus Safety System+ 3.0, including Pre-Collision System with Pedestrian Detection, Lane Departure Alert with Steering Assist, Lane Tracing Assist, and All-Speed Dynamic Radar Cruise Control.</li>
-                    <li><b>Driver Confidence Aids</b> - Equipped with Blind Spot Monitor, Rear Cross-Traffic Alert, and an available Panoramic View Monitor to make parking and maneuvering effortless.</li>
-                  </ul>
+                    <img src="https://cdn.autohaus.de/thumb_750x422/media/5172/lexus-nx-2022-2.jpg" alt="Lexus NX">
+                    <h3>Lexus NX 350h</h3>
+                    <p class="price">&#8358;60,000,000</p>
+                    <ul class="specs"><li>AWD</li><li>8-speed automatic</li><li>9.8-inch touchscreen</li><li>Lexus Safety System+ 3.0</li></ul>
+                    <a class="enquire-btn" href="https://wa.me/2348130369328" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Enquire on WhatsApp</a>
+                    <details class="more-info"><summary>View full details</summary><h4>Key Highlights</h4><ul>
+                        <li><b>Turbocharged Performance</b> - Powered by a 2.4-liter turbocharged 4-cylinder engine delivering 275 horsepower, paired with an 8-speed automatic transmission and standard All-Wheel Drive. Achieves 0-60 mph in 6.6 seconds with a high-rigidity body frame for reduced noise and improved ride comfort.</li>
+                        <li><b>Modern & Tech-Forward Interior</b> - Features a standard 9.8-inch HD touchscreen (upgradable to 14 inches) with wireless Apple CarPlay and Android Auto. Premium NuLuxe or leather-trimmed seating with power adjustments, digital latch door handles, keyless ignition, and an available head-up display.</li>
+                        <li><b>Advanced Safety Suite</b> - Comes standard with Lexus Safety System+ 3.0, including Pre-Collision System with Pedestrian Detection, Lane Departure Alert with Steering Assist, Lane Tracing Assist, and All-Speed Dynamic Radar Cruise Control.</li>
+                        <li><b>Driver Confidence Aids</b> - Equipped with Blind Spot Monitor, Rear Cross-Traffic Alert, and an available Panoramic View Monitor to make parking and maneuvering effortless.</li>
+                    </ul></details>
                 </div>
-            </div>    
-            <div class="car-card">
-                <img src="https://www.edmunds.com/assets/m2/for-sale/1a-2T2GK31U88C028962/img-1-600x400.jpg" alt="Lexus RX 350 - 2008">
-                <h3>Lexus RX 350 - 2008 model</h3>
-                <p class="price">&#8358;15,500,000</p>
-                <h3>Behind The Wheels</h3>
-                <ul>
-                    <li><b>Proven V6 Performance</b> - Powered by a 3.5-liter V6 engine producing 270 hp and 251 lb-ft of torque, paired with a 5-speed automatic transmission with sequential shift control. Available in Front-Wheel Drive or permanent All-Wheel Drive, delivering an EPA-estimated 18 mpg city / 23 mpg highway (19 mpg combined).</li>
-                    <li><b>Comfortable & Versatile Interior</b> - Seats 5 passengers with 10-way power-adjustable front seats, power lumbar support, and a 40-20-40 split-bench rear seat that reclines and slides. Features dual-zone automatic climate control with rear vents, and a leather-wood trimmed steering wheel with audio and Bluetooth controls.</li>
-                    <li><b>Convenience & Exterior Features</b> - Equipped with a power liftgate, cruise control, and universal garage door opener. Exterior includes 17-inch aluminum alloy wheels, automatic headlights, and optional adaptive swivel headlights for improved nighttime visibility.</li>
-                    <li><b>Entertainment & Navigation</b> - Includes AM/FM radio, cassette player, and an available 6-disc in-dash CD changer. Optional voice-activated GPS navigation and premium sound system available for upgraded audio and guidance.</li>
-                </ul>
+                <div class="car-card">
+                    <img src="https://www.edmunds.com/assets/m2/for-sale/1a-2T2GK31U88C028962/img-1-600x400.jpg" alt="Lexus RX 350 - 2008">
+                    <h3>Lexus RX 350 - 2008 model</h3>
+                    <p class="price">&#8358;15,500,000</p>
+                    <ul class="specs"><li>3.5L V6</li><li>270 hp</li><li>5-speed automatic</li><li>5 seats</li></ul>
+                    <a class="enquire-btn" href="https://wa.me/2348130369328" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Enquire on WhatsApp</a>
+                    <details class="more-info"><summary>View full details</summary><h4>Behind The Wheels</h4><ul>
+                        <li><b>Proven V6 Performance</b> - Powered by a 3.5-liter V6 engine producing 270 hp and 251 lb-ft of torque, paired with a 5-speed automatic transmission with sequential shift control. Available in Front-Wheel Drive or permanent All-Wheel Drive, delivering an EPA-estimated 18 mpg city / 23 mpg highway (19 mpg combined).</li>
+                        <li><b>Comfortable & Versatile Interior</b> - Seats 5 passengers with 10-way power-adjustable front seats, power lumbar support, and a 40-20-40 split-bench rear seat that reclines and slides. Features dual-zone automatic climate control with rear vents, and a leather-wood trimmed steering wheel with audio and Bluetooth controls.</li>
+                        <li><b>Convenience & Exterior Features</b> - Equipped with a power liftgate, cruise control, and universal garage door opener. Exterior includes 17-inch aluminum alloy wheels, automatic headlights, and optional adaptive swivel headlights for improved nighttime visibility.</li>
+                        <li><b>Entertainment & Navigation</b> - Includes AM/FM radio, cassette player, and an available 6-disc in-dash CD changer. Optional voice-activated GPS navigation and premium sound system available for upgraded audio and guidance.</li>
+                    </ul></details>
+                </div>
+            </div>
+        </div>
+            
+                        <div class="brand-section" id="mercedes-benz" data-brand="mercedes-benz">
+                <div class="brand-header">Mercedes-Benz</div>
+                <p class="brand-note">Brand-new vehicles. Prices are indicative and may change, so please confirm on WhatsApp.</p>
+                <div class="car-grid">
+                <div class="car-card">
+                    <div class="car-photo-placeholder"><i class="fas fa-car-side"></i><span>Photo coming soon</span></div>
+                    <h3>Mercedes-Benz CLA - 2026 model</h3>
+                    <p class="price">&#8358;85,929,600</p>
+                    <ul class="specs"><li>2026 model</li><li>Coupe</li><li>Brand new</li></ul>
+                    <a class="enquire-btn" href="https://wa.me/2348130369328" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Enquire on WhatsApp</a>
+                </div>                <div class="car-card">
+                    <div class="car-photo-placeholder"><i class="fas fa-car-side"></i><span>Photo coming soon</span></div>
+                    <h3>Mercedes-AMG CLA 45 4MATIC</h3>
+                    <p class="price">&#8358;96,307,200</p>
+                    <ul class="specs"><li>AMG</li><li>4MATIC</li><li>Coupe</li><li>2025 model</li></ul>
+                    <a class="enquire-btn" href="https://wa.me/2348130369328" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Enquire on WhatsApp</a>
+                </div>                <div class="car-card">
+                    <div class="car-photo-placeholder"><i class="fas fa-car-side"></i><span>Photo coming soon</span></div>
+                    <h3>Mercedes-AMG G 63</h3>
+                    <p class="price">&#8358;477,432,000</p>
+                    <ul class="specs"><li>AMG</li><li>4x4</li><li>2025 model</li><li>Brand new</li></ul>
+                    <a class="enquire-btn" href="https://wa.me/2348130369328" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Enquire on WhatsApp</a>
+                </div>                </div>
+                <div class="brand-empty brand-more">
+                    <div>
+                        <h3>Looking for another Mercedes-Benz model?</h3>
+                        <p>Tell us which model you want and we will get back to you with what is available.</p>
+                    </div>
+                    <a class="btn btn-primary" href="https://wa.me/2348130369328?text=Hello%20VIQ%20Auto's%2C%20I'm%20looking%20for%20another%20Mercedes-Benz%20model.%20What%20do%20you%20have%20available%3F" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Ask on WhatsApp</a>
+                </div>
+            </div>
+
+                        <div class="brand-section" id="changan" data-brand="changan">
+                <div class="brand-header">Changan Motors</div>
+                <p class="brand-note">Brand-new vehicles. Prices are indicative and may change, so please confirm on WhatsApp.</p>
+                <div class="car-grid">
+                <div class="car-card">
+                    <div class="car-photo-placeholder"><i class="fas fa-car-side"></i><span>Photo coming soon</span></div>
+                    <h3>Changan CS55 Plus - 2026 model</h3>
+                    <p class="price">&#8358;20,520,000</p>
+                    <ul class="specs"><li>SUV</li><li>2026 model</li><li>Brand new</li></ul>
+                    <a class="enquire-btn" href="https://wa.me/2348130369328" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Enquire on WhatsApp</a>
+                </div>                <div class="car-card">
+                    <div class="car-photo-placeholder"><i class="fas fa-car-side"></i><span>Photo coming soon</span></div>
+                    <h3>Changan Eado - 2026 model</h3>
+                    <p class="price">&#8358;21,067,200</p>
+                    <ul class="specs"><li>1.5L turbo</li><li>Sedan</li><li>2026 model</li></ul>
+                    <a class="enquire-btn" href="https://wa.me/2348130369328" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Enquire on WhatsApp</a>
+                </div>                <div class="car-card">
+                    <div class="car-photo-placeholder"><i class="fas fa-car-side"></i><span>Photo coming soon</span></div>
+                    <h3>Changan CS95 - 2026 model</h3>
+                    <p class="price">&#8358;43,160,400</p>
+                    <ul class="specs"><li>2.0L turbo</li><li>233 hp</li><li>AWD</li><li>7 seats</li></ul>
+                    <a class="enquire-btn" href="https://wa.me/2348130369328" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Enquire on WhatsApp</a>
+                </div>                <div class="car-card">
+                    <div class="car-photo-placeholder"><i class="fas fa-car-side"></i><span>Photo coming soon</span></div>
+                    <h3>Changan UNI-K - 2026 model</h3>
+                    <p class="price">&#8358;55,198,800</p>
+                    <ul class="specs"><li>2.0L turbo</li><li>Premium SUV</li><li>2026 model</li></ul>
+                    <a class="enquire-btn" href="https://wa.me/2348130369328" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Enquire on WhatsApp</a>
+                </div>                </div>
+                <div class="brand-empty brand-more">
+                    <div>
+                        <h3>Looking for another Changan model?</h3>
+                        <p>Tell us which model you want and we will get back to you with what is available.</p>
+                    </div>
+                    <a class="btn btn-primary" href="https://wa.me/2348130369328?text=Hello%20VIQ%20Auto's%2C%20I'm%20looking%20for%20another%20Changan%20model.%20What%20do%20you%20have%20available%3F" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Ask on WhatsApp</a>
+                </div>
+            </div>
+
+                        <div class="brand-section" id="jetour" data-brand="jetour">
+                <div class="brand-header">Jetour</div>
+                <p class="brand-note">Brand-new vehicles. Prices are indicative and may change, so please confirm on WhatsApp.</p>
+                <div class="car-grid">
+                <div class="car-card">
+                    <div class="car-photo-placeholder"><i class="fas fa-car-side"></i><span>Photo coming soon</span></div>
+                    <h3>Jetour X50</h3>
+                    <p class="price">&#8358;25,599,200</p>
+                    <ul class="specs"><li>1.5L turbo</li><li>6-speed DCT</li><li>Electric sunroof</li><li>CarPlay / Android Auto</li></ul>
+                    <a class="enquire-btn" href="https://wa.me/2348130369328" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Enquire on WhatsApp</a>
+                </div>                <div class="car-card">
+                    <div class="car-photo-placeholder"><i class="fas fa-car-side"></i><span>Photo coming soon</span></div>
+                    <h3>Jetour X70 Plus</h3>
+                    <p class="price">&#8358;32,980,600</p>
+                    <ul class="specs"><li>1.5L or 1.6L turbo</li><li>6/7-speed DCT</li><li>Panoramic roof</li><li>360&deg; camera</li></ul>
+                    <a class="enquire-btn" href="https://wa.me/2348130369328" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Enquire on WhatsApp</a>
+                </div>                <div class="car-card">
+                    <div class="car-photo-placeholder"><i class="fas fa-car-side"></i><span>Photo coming soon</span></div>
+                    <h3>Jetour Dashing</h3>
+                    <p class="price">On request</p>
+                    <ul class="specs"><li>1.5L or 1.6L turbo</li><li>5 seats</li><li>Panoramic sunroof</li><li>360&deg; camera</li></ul>
+                    <a class="enquire-btn" href="https://wa.me/2348130369328" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Enquire on WhatsApp</a>
+                </div>                <div class="car-card">
+                    <div class="car-photo-placeholder"><i class="fas fa-car-side"></i><span>Photo coming soon</span></div>
+                    <h3>Jetour T2</h3>
+                    <p class="price">&#8358;53,397,100</p>
+                    <ul class="specs"><li>2.0L turbo</li><li>4WD</li><li>7-speed DCT</li><li>15.6-inch screen</li></ul>
+                    <a class="enquire-btn" href="https://wa.me/2348130369328" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Enquire on WhatsApp</a>
+                </div>                </div>
+                <div class="brand-empty brand-more">
+                    <div>
+                        <h3>Looking for another Jetour model?</h3>
+                        <p>Tell us which model you want and we will get back to you with what is available.</p>
+                    </div>
+                    <a class="btn btn-primary" href="https://wa.me/2348130369328?text=Hello%20VIQ%20Auto's%2C%20I'm%20looking%20for%20another%20Jetour%20model.%20What%20do%20you%20have%20available%3F" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Ask on WhatsApp</a>
+                </div>
             </div>
         </div>
     </section>
@@ -191,7 +333,7 @@
             <h4>Contact Us</h4>
             <p><i class="fas fa-map-marker-alt"></i> 25 Olatunde Avenue, Hopeland Estate, Oko Afo, Badagry, Lagos, Nigeria.</p>
             <p><i class="fas fa-phone"></i> Phone: +234 704 019 4687</p>
-            <p><i class="fas fa-envelope"></i></a> Email: <a href="mailto:etongvictor56@gmail.com">etongvictor56@gmail.com</a></p>
+            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:etongvictor56@gmail.com">etongvictor56@gmail.com</a></p>
             <p><i class="fab fa-facebook"></i> Facebook: <a href="https://www.facebook.com/victor.etong.56" target="_blank">Victor Etong</a></p>
             <p><i class="fa-brands fa-whatsapp"></i> +234 813 036 9328</p>
         </div>
@@ -200,12 +342,43 @@
         <p>&copy; 2026 VIQ Auto's. All rights reserved.</p>
     </div>
 </footer>
+<a href="https://wa.me/2348130369328" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat with us on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
 <script>
-    const hamburger = document.getElementById('harmburger');
+    const hamburger = document.getElementById('hamburger');
     const menu = document.getElementById('menu');
 
     hamburger.addEventListener('click', function() {
         menu.classList.toggle('active');
+    });
+
+    // Brand filter
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const brandSections = document.querySelectorAll('.brand-section');
+
+    filterButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            const brand = button.dataset.filter;
+
+            filterButtons.forEach(function(b) {
+                const isActive = b === button;
+                b.classList.toggle('active', isActive);
+                b.setAttribute('aria-pressed', isActive);
+            });
+
+            brandSections.forEach(function(section) {
+                section.hidden = brand !== 'all' && section.dataset.brand !== brand;
+            });
+        });
+    });
+
+    // WhatsApp enquiry links: add the car name and price to the message
+    document.querySelectorAll('.car-card').forEach(function(card) {
+        const link = card.querySelector('.enquire-btn');
+        if (!link) return;
+        const name = card.querySelector('h3').textContent.trim();
+        const price = card.querySelector('.price').textContent.trim();
+        const message = "Hello VIQ Auto's, I'm interested in the " + name + (/\d/.test(price) ? " (" + price + ")" : "") + ". Is it still available?";
+        link.href = 'https://wa.me/2348130369328?text=' + encodeURIComponent(message);
     });
 </script>
 </body>

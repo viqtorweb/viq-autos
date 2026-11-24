@@ -6,79 +6,112 @@
     <title>Test Drive Your Preowned Cars</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="testdrive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="./assets/logo.png">
 </head>
 <body>
-    <div class="main">
-        <div class="navbar">
-            <div class="icon">
-                <h2 class="logo">VIQ Auto's</h2>
+    <header class="site-header">
+        <div class="navbar container">
+            <a href="index.html" class="logo-container">
+                <img src="./assets/logo.png" alt="VIQ Auto's Logo" class="logo">
+                <span>VIQ Auto's</span>
+            </a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="hamburger" id="harmburger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-                <ul class="menu" id="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="products.html">Our Products</a></li>
-                    <li><a href="testdrive.html">Book a Test Drive</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Our Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="testdrive.html" class="menu-cta">Book a Test Drive</a></li>
+            </ul>
         </div>
-    </div>
-    <section id="testdrive page" class="testdrive section">
-        <h3>Book a Testdrive</h3>
-        <p>Experience the thrill of your dream car before you decide. At VIQ Auto's, we make it easy for you to take any of our vehicles for a spin. Simply fill in the form below, choose your preferred car, and we'll get in touch to schedule a convenient time for you. No pressure just pure driving pleasure.</p>
-        <div class="form">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" placeholder="type in your name">
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Book a Test Drive</h1>
+            <p>Experience your dream car before you decide. No pressure, just pure driving pleasure.</p>
         </div>
-        <div class="form">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" placeholder="viqauto@gmail.com">
-        </div>
-        <div class="form">
-            <label for="tel">Phone Number</label>
-            <input type="tel" id="tel" placeholder="08012345679">
-        </div>
-        <div class="form">
-            <label for="car">Select Your Car:</label>
-            <select name="car" id="car">
+    </section>
+
+    <section class="section section-soft" id="testdrive-page">
+        <div class="container">
+            <div class="form-card narrow">
+                <h2>Your Details</h2>
+                <p>Choose your car and preferred time, and we'll get in touch to confirm.</p>
+                <div class="form-grid">
+                    <div class="form">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="type in your name">
+                    </div>
+                    <div class="form">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="viqauto@gmail.com">
+                    </div>
+                    <div class="form">
+                        <label for="tel">Phone Number</label>
+                        <input type="tel" id="tel" placeholder="08012345679">
+                    </div>
+                    <div class="form">
+                        <label for="car">Select Your Car:</label>
+                        <select name="car" id="car">
                 <option value="">Select a car...</option>
                 <optgroup label="Toyota">
                  <option value="land-cruiser">Toyota Land Cruiser</option>
                  <option value="highlander">Toyota Highlander</option>
-                 <option value="rav4">Toyota RAV4</option>
+                 <option value="rav4">Toyota RAV4 Crossover SUV</option>
                  <option value="sienna">Toyota Sienna Hybrid</option>
+                 <option value="avalon-2017">Toyota Avalon - 2017 model</option>
                 </optgroup>
                 <optgroup label="Lexus">
-                    <option value="nx-350">Lexus NX 350</option>
-                    <option value="rx-350">Lexus RX 350</option>
+                    <option value="gx-450">Lexus GX 450</option>
                     <option value="es-350">Lexus ES 350</option>
-                    <option value="gx-460">Lexus GX 460</option>
-                    <option value="lx-570">Lexus RX 350 2008 model</option>
+                    <option value="rx-350-2015">Lexus RX 350 - 2015 model</option>
+                    <option value="nx-350h">Lexus NX 350h</option>
+                    <option value="rx-350-2008">Lexus RX 350 - 2008 model</option>
                 </optgroup>
-            </select>
+                            <optgroup label="Mercedes-Benz">
+                    <option value="mercedes-cla-2026">Mercedes-Benz CLA - 2026 model</option>
+                    <option value="mercedes-amg-cla-45">Mercedes-AMG CLA 45 4MATIC</option>
+                    <option value="mercedes-amg-g63">Mercedes-AMG G 63</option>
+                </optgroup>
+                <optgroup label="Changan">
+                    <option value="changan-cs55-plus">Changan CS55 Plus - 2026 model</option>
+                    <option value="changan-eado">Changan Eado - 2026 model</option>
+                    <option value="changan-cs95">Changan CS95 - 2026 model</option>
+                    <option value="changan-uni-k">Changan UNI-K - 2026 model</option>
+                </optgroup>
+                <optgroup label="Jetour">
+                    <option value="jetour-x50">Jetour X50</option>
+                    <option value="jetour-x70-plus">Jetour X70 Plus</option>
+                    <option value="jetour-dashing">Jetour Dashing</option>
+                    <option value="jetour-t2">Jetour T2</option>
+                </optgroup>            </select>
+                    </div>
+                    <div class="form">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" placeholder="Date">
+                    </div>
+                    <div class="form">
+                        <label for="time">Time</label>
+                        <input type="time" id="time" placeholder="preferred time">
+                    </div>
+                    <div class="form full">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Write your Message here"></textarea>
+                    </div>
+                </div>
+                <button class="btn btn-primary">Book My Test Drive</button>
+            </div>
         </div>
-        <div class="form">
-            <label for="date">Date</label>
-            <input type="date" id="date" placeholder="Date">
-        </div>
-        <div class="form">
-            <label for="time">Time</label>
-            <input type="time" id="time" placeholder="preferred time">
-        </div>
-        <div class="form">
-            <label for="message">Message</label>
-            <textarea name="message" id="message" placeholder="Write your Message here"></textarea>
-        </div>
-        <button>Submit</button>
     </section>
+
     <footer>
     <div class="footer-content">
         <div class="footer-brand">
@@ -99,7 +132,7 @@
             <h4>Contact Us</h4>
             <p><i class="fas fa-map-marker-alt"></i> 25 Olatunde Avenue, Hopeland Estate, Oko Afo, Badagry, Lagos, Nigeria.</p>
             <p><i class="fas fa-phone"></i> Phone: +234 704 019 4687</p>
-            <p><i class="fas fa-envelope"></i></a> Email: <a href="mailto:etongvictor56@gmail.com">etongvictor56@gmail.com</a></p>
+            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:etongvictor56@gmail.com">etongvictor56@gmail.com</a></p>
             <p><i class="fab fa-facebook"></i> Facebook: <a href="https://www.facebook.com/victor.etong.56" target="_blank">Victor Etong</a></p>
             <p><i class="fa-brands fa-whatsapp"></i> +234 813 036 9328</p>
         </div>
@@ -108,8 +141,9 @@
         <p>&copy; 2026 VIQ Auto's. All rights reserved.</p>
     </div>
 </footer>
+<a href="https://wa.me/2348130369328" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat with us on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
 <script>
-    const hamburger = document.getElementById('harmburger');
+    const hamburger = document.getElementById('hamburger');
     const menu = document.getElementById('menu');
 
     hamburger.addEventListener('click', function() {
